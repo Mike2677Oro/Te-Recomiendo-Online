@@ -1,0 +1,564 @@
+/* Estilos base */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 100px;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#subInicio {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#textmp {
+    color: white;
+}
+
+/* Estilos para el casino destacado */
+.casino-destacado {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.casino-destacado-header {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    flex-direction: column;
+}
+
+.casino-destacado-header h3 {
+    margin: 0;
+}
+
+.casino-destacado-bonificacion {
+    text-align: right;
+}
+
+.casino-destacado-bonificacion p {
+    margin: 0;
+}
+
+.casino-destacado-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.casino-destacado-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.casino-destacado-logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.casino-destacado-logo .calificacion {
+    margin: 0.5rem 0;
+}
+
+.casino-destacado-logo .boton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #36a113;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.casino-destacado-logo .boton:hover {
+    background-color: #35bd07;
+}
+
+.casino-destacado-detalles {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.casino-destacado-detalles p {
+    margin: 0.5rem 0;
+}
+
+.casino-destacado-detalles ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.casino-destacado-detalles ul li {
+    margin-bottom: 0.5rem;
+}
+
+.casino-destacado-metodos {
+    text-align: right;
+    flex: 1;
+}
+
+.casino-destacado-metodos p {
+    margin-bottom: 0.5rem;
+}
+
+.casino-destacado-metodos .metodo-deposito {
+    width: 50px;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
+.casino-destacado-nota {
+    background-color: #e0ffe0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#oBText {
+    font-weight: bold;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .casino-destacado-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .casino-destacado-detalles {
+        padding: 1rem 0;
+    }
+
+    .casino-destacado-metodos {
+        text-align: center;
+    }
+
+    .casino-destacado-metodos .metodo-deposito {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.casino-lista {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.casino-lista th, .casino-lista td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.casino-lista th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.casino-lista td img.logo-casino {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 1rem;
+    display: block;
+    border-radius: 5px;
+}
+
+.casino-lista td img.metodo-deposito {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 0.5rem;
+}
+
+.casino-lista .boton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #36a113;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.casino-lista .boton:hover {
+    background-color: #35bd07;
+}
+
+.botonDest {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #36a113;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.card-content p {
+    color: #777;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (min-width: 900px) {
+    .card {
+        width: calc(33.33% - 40px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-container {
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(33.33% - 20px); /* Ensures there are 3 cards per row with spacing */
+    }
+}
+
+.testimonial-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.testimonial-section h2 {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    flex: 0 0 auto;
+    width: 300px; /* Ajustar el ancho según sea necesario */
+    padding: 20px;
+    scroll-snap-align: center;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.testimonial p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .testimonial-carousel {
+        justify-content: start;
+    }
+
+    .testimonial {
+        width: 200px;
+    }
+}
+
+@media (min-width: 900px) {
+    .testimonial {
+        width: 250px;
+    }
+}
+
+footer {
+    background-color: #f2ececab;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+
+    .casino-lista td img.logo-casino {
+        width: 60px;
+        height: auto;
+    }
+
+    .casino-lista td img.metodo-deposito {
+        width: 40px;
+        height: 40px;
+    }
+
+    .casino-lista .boton {
+        padding: 0.5rem;
+    }
+
+    .botonDest {
+        padding: 0.5rem;
+    }
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #35bd07;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .hamburger {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle .hamburger::before {
+    transform: translateY(-8px);
+}
+
+.nav-toggle .hamburger::after {
+    transform: translateY(8px);
+}
+
+@media (max-width: 768px) {
+    .sobreNosotros, .about-us p {
+        width: 90%;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 2rem 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .mejoresCasinos1 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}
