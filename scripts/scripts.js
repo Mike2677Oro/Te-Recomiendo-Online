@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.classList.toggle('open');
     });
 });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.getElementById("testimonial-carousel");
     const leftArrow = document.getElementById("left-arrow");
