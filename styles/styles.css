@@ -152,6 +152,10 @@ h1 {
     color: white;
 }
 
+#text1{
+    text-align: center;
+}
+
 /* Estilos para el casino destacado */
 .casino-destacado {
     border: 1px solid #ccc;
@@ -203,7 +207,7 @@ h1 {
 }
 
 .casino-destacado-logo img {
-    width: 120px;
+    width: 280px;
     height: auto;
     margin-bottom: 0.5rem;
 }
@@ -314,7 +318,7 @@ h1 {
 }
 
 .casino-lista td img.logo-casino {
-    width: 100px;
+    width: 130px;
     height: auto;
     object-fit: cover;
     margin-right: 1rem;
@@ -583,7 +587,7 @@ footer p {
     }
 
     .casino-lista td img.logo-casino {
-        width: 60px;
+        width: 80px;
         height: auto;
     }
 
